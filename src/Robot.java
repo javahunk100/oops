@@ -1,35 +1,47 @@
 
-public class Robot {
-	String name="Beam";
-	String color="white";
-	int price=303030;
-	
-	Robot(){
-		
-	}
-	
-   Robot(String n,String c,int p){
-		 name=n;
-		 color=c;
-		 price=p;
-	}
-	
-	public void walk(){
-		System.out.println("Robot is walking.....");
-	}
-	
-	public void sing(){
-		System.out.println("Robot is singing.....");
-	}
-	
-	public void dance(){
-		System.out.println("Robot is dancing.....");
-	}
-	
-	public void show(){
-		System.out.println("name = "+name);
-		System.out.println("color = "+color);
-		System.out.println("price = "+price);
+public class Robot  {
+	private String name="Bean";
+	private	 String color="white";
+	private int price=123;
+	 
+	 //default constructor
+	 public Robot(){
+	 }
+	 
+	 //parameterized constructor
+	 public Robot(String name,String color,int price) {
+		  this.name=name;
+		  this.color=color;
+		  this.price=price;
+	 }
+	 
+	 public Robot(String name) {
+		  this.name=name;
+	 }
+	 
+	 public Robot(int price) {
+		  this.price=price;
+	 }
+	 
+	 
+	 
+	 public void walk(){
+		 System.out.println("Robot can walk");
+	 }
+	 
+	 public void dance(){
+		 System.out.println("Robot can dance");
+	 }
+	 
+	 
+	 public void speak(){
+		 System.out.println("Robot can speak");
+	 }
 
+	@Override
+	public String toString() {
+		return "Robot [name=" + name + ", color=" + color + ", price=" + price + "]";
 	}
+
+	 
 }
