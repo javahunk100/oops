@@ -1,11 +1,16 @@
-
 public class Robot  {
-	private String name="Bean";
-	private	 String color="white";
+	private  String name="Bean";
+	private String color="white";
 	private int price=123;
 	 
 	 //default constructor
 	 public Robot(){
+	 }
+	 
+	 public void setValues(String name,String color,int price){
+		 this.name=name;
+		  this.color=color;
+		  this.price=price;
 	 }
 	 
 	 //parameterized constructor
@@ -22,7 +27,6 @@ public class Robot  {
 	 public Robot(int price) {
 		  this.price=price;
 	 }
-	 
 	 
 	 
 	 public void walk(){
